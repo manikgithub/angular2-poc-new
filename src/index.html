@@ -10,11 +10,16 @@
   {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="../node_modules/material-design-lite/material.min.css">
-  <script src="../node_modules/material-design-lite/material.min.js"></script>
+  <link rel="stylesheet" href="/vendor/material-design-lite/material.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="/vendor/material-design-lite/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  
+  
+
   <app-root>Loading...</app-root>
 
   
@@ -27,7 +32,7 @@
         System.import('main');
       }).catch(console.error.bind(console));
     </script>
-
+    
   
 
 </body>

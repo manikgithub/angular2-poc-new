@@ -29,10 +29,12 @@ const barrels: string[] = [
 
   // Thirdparty barrels.
   'rxjs',
+  'material-design-lite',
 
   // App specific barrels.
   'app',
   'app/shared',
+
   /** @cli-barrel */
 ];
 
@@ -46,12 +48,16 @@ declare var System: any;
 
 // Apply the CLI SystemJS configuration.
 System.config({
+
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
-    'main': 'main.js'
+    'main': 'main.js',
+    'material-design-lite' : 'vendor/material-design-lite'
   },
   packages: cliSystemConfigPackages
+    
+ 
 });
 
 // Apply the user's configuration.
