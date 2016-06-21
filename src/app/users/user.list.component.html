@@ -1,1 +1,16 @@
-<h1>Hello</h1>
+<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Id</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let user of users">
+          <th >{{user.id}}</th>
+          <th>{{user.name}}</th>
+          <th>{{user.email}}</th>
+      </tr>
+  </tbody>
+</table>
