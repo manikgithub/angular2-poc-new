@@ -1,59 +1,49 @@
-<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-  <div class="mdl-tabs__tab-bar">
-      <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
-      <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
-      <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
-  </div>
-
-  <div class="mdl-tabs__panel is-active" id="starks-panel">
-    <ul>
-      <li>Eddard</li>
-      <li>Catelyn</li>
-      <li>Robb</li>
-      <li>Sansa</li>
-      <li>Brandon</li>
-      <li>Arya</li>
-      <li>Rickon</li>
-    </ul>
-  </div>
-  <div class="mdl-tabs__panel" id="lannisters-panel">
-    <ul>
-      <li>Tywin</li>
-      <li>Cersei</li>
-      <li>Jamie</li>
-      <li>Tyrion</li>
-    </ul>
-  </div>
-  <div class="mdl-tabs__panel" id="targaryens-panel">
-    <ul>
-      <li>Viserys</li>
-      <li>Daenerys</li>
-    </ul>
-  </div>
-</div>
-
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">{{title}}</span>
+      <div>
+        <span class="mdl-layout-title">{{title}}</span>
+      </div>
+      <div class="mdl-layout-spacer"></div>
+      <div>
+        <!-- Expandable Textfield -->
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                    mdl-textfield--floating-label mdl-textfield--align-right">
+          <label class="mdl-button mdl-js-button mdl-button--icon"
+                for="fixed-header-drawer-exp">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" name="sample"
+                  id="fixed-header-drawer-exp">
+          </div>
+        </div>
+
+      
+      </div>
+
+
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-      <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-      <a href="#features" class="mdl-layout__tab">Features</a>
+      <a  href="#homeid" class="mdl-layout__tab is-active">Home</a>
+      <a [routerLink]="['Users']" href="#users" class="mdl-layout__tab">Users</a>
+      <a href="#callout" class="mdl-layout__tab">Call Out Tab</a>
     </div>
   </header>
 
     <!-- Tabs content -->
     
     <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
+      <router-outlet></router-outlet>
+        <div class="mdl-layout__tab-panel is-active" id="homeid">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            Overview Content
+            <h4>Overview Content</h4>
           </section>
         </div>
-        <div class="mdl-layout__tab-panel" id="features">
+        <div class="mdl-layout__tab-panel" id="usersid">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
               <h4>Features</h4>

@@ -6,7 +6,7 @@ import { IUser } from '../users/user';
 
 @Injectable()
 export class UserService {
-    private _userUrl = 'server/mock/api/users.json';
+    private _userUrl = '/server/mock/api/users.json';
     
     constructor(private _http: Http) { }
     
