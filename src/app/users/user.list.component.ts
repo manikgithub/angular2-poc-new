@@ -1,11 +1,13 @@
 import { Component, OnInit} from '@angular/core';
+import {AutoCompleteDirective} from "ng2-auto-complete/dist";
 import { UserService } from '../services/user.service';
 import { IUser } from './user';
 
 @Component({
   selector: 'user-list-comp',
-  templateUrl: 'app/users/user.list.component.html'
+  templateUrl: 'app/users/user.list.component.html',
   //styleUrls: ['app.component.css']
+  directives: [AutoCompleteDirective],
 })
 
 export class UserListComponent implements OnInit {

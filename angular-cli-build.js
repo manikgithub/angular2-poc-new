@@ -16,6 +16,7 @@ module.exports = function(defaults) {
       'reflect-metadata/**/*.+(ts|js|js.map)',
       'rxjs/**/*.+(js|js.map)',
       'material-design-lite/**/*.+(js|js.map|css)',
+      'ng2-auto-complete/**/*.+(js|js.map|css|html)',
       '@angular/**/*.+(js|js.map)'
     ]
   });

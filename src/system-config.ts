@@ -28,9 +28,10 @@ const barrels: string[] = [
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
 
-  // Thirdparty barrels.
+  // Thirdparty barrelnng2-s.
   'rxjs',
   'material-design-lite',
+  'ng2-auto-complete/dist',
 
   // App specific barrels.
   'app',
@@ -54,7 +55,8 @@ System.config({
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
     'main': 'main.js',
-    'material-design-lite' : 'vendor/material-design-lite'
+    'material-design-lite' : 'vendor/material-design-lite',
+    'ng2-auto-complete': 'vendor/ng2-auto-complete'
   },
   packages: cliSystemConfigPackages
     

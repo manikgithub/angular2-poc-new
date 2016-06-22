@@ -1,3 +1,4 @@
+<h3>Users</h3>
 <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
   <thead>
     <tr>
@@ -8,9 +9,12 @@
   </thead>
   <tbody>
       <tr *ngFor="let user of users">
-          <th >{{user.id}}</th>
-          <th>{{user.name}}</th>
-          <th>{{user.email}}</th>
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
       </tr>
   </tbody>
 </table>
+
+<br />
+<input auto-complete [(ngModel)]="user" display-property-name="name" value-property-name="id" [source]="users" />
