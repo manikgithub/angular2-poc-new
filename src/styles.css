@@ -236,3 +236,12 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+.mdl-pHeader{
+  height : 2%;
+}
+.mdl-pBody{
+  height : 15%;
+}
+.mdl-pFooter{
+height : 15%;
+}
