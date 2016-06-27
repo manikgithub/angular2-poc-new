@@ -1,16 +1,87 @@
-<div class="mdl-layout mdl-js-layout">
-  
- 
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
     
+  <header class="mdl-layout__header">
+    <!--<div class="mdl-layout__header-row">
+        <div>
+          LogIn/Logout
+        </div>
+    </div>-->
+
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div>
+        <span class="mdl-layout-title">{{title}}</span>
+      </div>
+      <div>
+        <!--<a  [routerLink]="['/Login']">Log In</a>-->
+      </div>
+      <div class="mdl-layout-spacer"></div>
+       <!--search -->
+      <div>
+        <!-- Expandable Textfield -->
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                    mdl-textfield--floating-label mdl-textfield--align-right">
+          <label class="mdl-button mdl-js-button mdl-button--icon"
+                for="fixed-header-drawer-exp">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" name="sample"
+                  id="fixed-header-drawer-exp">
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+
+    
+
+<!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-color--primary-dark">
+      <a href="#homeid" class="mdl-layout__tab is-active">Home</a>
+      <a href="#usersid" class="mdl-layout__tab">Users</a>
+      <a href="#callout" class="mdl-layout__tab">Call Out Tab</a>
+    </div>
+
+    </header>
+  
+    <!-- Tabs content -->
+    
+    <main class="mdl-layout__content">
+      <!--<router-outlet></router-outlet>-->
+        <div class="mdl-layout__tab-panel is-active" id="homeid">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <h4>Overview Content</h4>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="usersid">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+             <user-list-comp>Loading....</user-list-comp>
+ 
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="callout">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+             Callout Tab
+ 
+            </div>
+          </section>
+        </div>
+    </main>
 
   <!--<div class="mdl-pHeader">-->
       <!-- header -->
-    <app-header-comp > </app-header-comp>
+    <!--<app-header-comp > </app-header-comp>-->
 
   <!--</div>-->
     
   <!-- body -->
-  <app-body-comp></app-body-comp>
+  <!--<app-body-comp></app-body-comp>-->
   <!-- footer -->
   <!--<app-footer-comp></app-footer-comp>-->
 </div>

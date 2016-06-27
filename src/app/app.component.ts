@@ -23,15 +23,15 @@ import { AppBodyComponent } from './app.body.component';
   selector: 'app-root',
   templateUrl: 'app.component.html',
   //styleUrls: ['app.component.css'],
-  directives: [UserListComponent, ROUTER_DIRECTIVES, AppHeaderComponent, AppBodyComponent],
+  directives: [UserListComponent, ROUTER_DIRECTIVES],
   providers: [HTTP_PROVIDERS, ROUTER_PROVIDERS, UserService, AuthenticationService ]
    
 })
 
 @RouteConfig ([
     //{ path: '/', redirectTo: ['Login'] },
-    { path: '/home', name: 'Home', component: HomeComponent },
-    { path: '/login', name: 'Login', component: LoginComponent}
+    //{ path: '/home', name: 'Home', component: HomeComponent },
+    //{ path: '/login', name: 'Login', component: LoginComponent}
 ])
 
 export class AppComponent {
