@@ -29,9 +29,9 @@ import { AppBodyComponent } from './app.body.component';
 })
 
 @RouteConfig ([
-    //{ path: '/', redirectTo: ['Login'] },
-    //{ path: '/home', name: 'Home', component: HomeComponent },
-    //{ path: '/login', name: 'Login', component: LoginComponent}
+    { path: '/', redirectTo: ['Login'] },
+    { path: '/home', name: 'Home', component: HomeComponent },
+    { path: '/login', name: 'Login', component: LoginComponent}
 ])
 
 export class AppComponent {

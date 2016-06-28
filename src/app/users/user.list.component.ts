@@ -40,7 +40,7 @@ export class UserListComponent implements OnInit {
             componentHandler.upgradeAllRegistered();
             console.log('Injected MDL on DOM');
         }, 100);
-        this.authFlag = this.authService.isVisible('user-list-comp', 'user-list-comp1');
+        this.authFlag = this.authService.isVisible('user-list-comp', 'user-list-comp');
         console.log('authFlag: ' + this.authFlag);
         var THIS  =this;
         var list = this.userService.getUsers();
