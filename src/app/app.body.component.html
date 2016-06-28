@@ -1,0 +1,26 @@
+    
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-color--primary-dark">
+      <a href="#homeid" class="mdl-layout__tab is-active">Home</a>
+      <a href="#usersid" class="mdl-layout__tab">Users</a>
+      <a href="#callout" class="mdl-layout__tab">Call Out Tab</a>
+    </div>
+    
+    <!-- Tabs content -->
+    
+    <main class="mdl-layout__content">
+      <router-outlet></router-outlet>
+        <div class="mdl-layout__tab-panel is-active" id="homeid">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <h4>Overview Content</h4>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="usersid">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+             <user-list-comp>Loading....</user-list-comp>
+ 
+            </div>
+          </section>
+        </div>
+    </main>
